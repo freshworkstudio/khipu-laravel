@@ -6,6 +6,6 @@ class Khipu extends Facade
 {
 	protected static function getFacadeAccessor()
 	{
-		return 'khipu_wrapper';
+		return \FreshworkStudio\Khipu\Khipu::class;
 	}
 }

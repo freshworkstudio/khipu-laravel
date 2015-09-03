@@ -37,13 +37,13 @@ class KhipuServiceProvider extends ServiceProvider
 
     private function bindKhipuClass()
     {
-        $this->app->bind('khipu_wrapper', function ($app) {
+        $this->app->bind(Khipu::class, function ($app) {
             return new Khipu(config('khipu.id'), config('khipu.key'));
         });
     }
 
     public function provides()
     {
-        return array('khipu_wrapper');
+        return array(Khipu::class);
     }
 }
