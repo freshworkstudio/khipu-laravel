@@ -23,5 +23,5 @@ return array(
 	| "https://khipu.com/merchant/profile"
 	|
 	*/
-	'key' => env('KHIPU_ID', 'your-key'),
+	'key' => env('KHIPU_KEY', 'your-key'),
 );
