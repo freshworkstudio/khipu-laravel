@@ -8,13 +8,22 @@ use Illuminate\Support\ServiceProvider;
 class KhipuServiceProvider extends ServiceProvider
 {
     /**
+	 * Indicates if loading of the provider is deferred.
+	 *
+	 * @var bool
+	 */
+    protected $defer = false;
+
+    /**
      * Bootstrap the application services.
      *
      * @return void
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__.'/config/config.php' => config_path('khipu.php'),
+        ]);
     }
     /**
      * Register the application services.
@@ -28,8 +37,13 @@ class KhipuServiceProvider extends ServiceProvider
 
     private function bindKhipuClass()
     {
-        $this->app->bind(Khipu::class, function ($app) {
+        $this->app->bind('khipu_wrapper', function ($app) {
             return new Khipu(config('khipu.id'), config('khipu.key'));
         });
+    }
+
+    public function provides()
+    {
+        return array('khipu_wrapper');
     }
 }
