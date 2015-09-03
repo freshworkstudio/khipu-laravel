@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "11a3a6240e9705bb73edcdca3a19c220",
+    "hash": "d325362377381af135b73470ca4167d7",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -131,7 +131,7 @@
         },
         {
             "name": "freshworkstudio/khipu",
-            "version": "0.1.1",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/freshworkstudio/khipu.git",
