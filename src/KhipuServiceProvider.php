@@ -2,7 +2,7 @@
 
 namespace FreshworkStudio\LaravelKhipu;
 
-use FreshworkStudio\Khipu;
+use FreshworkStudio\Khipu\Khipu;
 use Illuminate\Support\ServiceProvider;
 
 class KhipuServiceProvider extends ServiceProvider

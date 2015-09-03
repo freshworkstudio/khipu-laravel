@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "456c08370225a19ffebacce168c180ef",
+    "hash": "11a3a6240e9705bb73edcdca3a19c220",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -131,16 +131,16 @@
         },
         {
             "name": "freshworkstudio/khipu",
-            "version": "0.1",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/freshworkstudio/lib-php.git",
-                "reference": "1d58085a5f6f4e3784a9bf6f2d7e6e897dc67472"
+                "url": "https://github.com/freshworkstudio/khipu.git",
+                "reference": "29a3bef93ade3d9315d24c9ff6f92a0dc3fcb9c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/freshworkstudio/lib-php/zipball/1d58085a5f6f4e3784a9bf6f2d7e6e897dc67472",
-                "reference": "1d58085a5f6f4e3784a9bf6f2d7e6e897dc67472",
+                "url": "https://api.github.com/repos/freshworkstudio/khipu/zipball/29a3bef93ade3d9315d24c9ff6f92a0dc3fcb9c2",
+                "reference": "29a3bef93ade3d9315d24c9ff6f92a0dc3fcb9c2",
                 "shasum": ""
             },
             "require": {
@@ -152,7 +152,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "FreshworkStudio\\": "src/"
+                    "FreshworkStudio\\Khipu\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -166,29 +166,29 @@
                 }
             ],
             "description": "Composer package for Tifon's Khipu Library (https://github.com/khipu/lib-php)",
-            "time": "2015-09-02 07:22:24"
+            "time": "2015-09-03 00:15:59"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.0.33",
+            "version": "v5.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "b8b11d78724a6f8a62be3b1dfa20fa372f861398"
+                "reference": "610aea16e3d91dfd85db4cf43703403a83b7cba2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/b8b11d78724a6f8a62be3b1dfa20fa372f861398",
-                "reference": "b8b11d78724a6f8a62be3b1dfa20fa372f861398",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/610aea16e3d91dfd85db4cf43703403a83b7cba2",
+                "reference": "610aea16e3d91dfd85db4cf43703403a83b7cba2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=5.5.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.0-dev"
+                    "dev-master": "5.1-dev"
                 }
             },
             "autoload": {
@@ -208,37 +208,37 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "http://laravel.com",
-            "time": "2015-05-15 07:22:28"
+            "time": "2015-08-31 12:59:22"
         },
         {
             "name": "illuminate/support",
-            "version": "v5.0.33",
+            "version": "v5.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "32a12f97029b624fc0f9454e7ca69eaafef49c5d"
+                "reference": "3026f4768894e640809b5a91703c57ed69a9d9d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/32a12f97029b624fc0f9454e7ca69eaafef49c5d",
-                "reference": "32a12f97029b624fc0f9454e7ca69eaafef49c5d",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/3026f4768894e640809b5a91703c57ed69a9d9d8",
+                "reference": "3026f4768894e640809b5a91703c57ed69a9d9d8",
                 "shasum": ""
             },
             "require": {
                 "danielstjules/stringy": "~1.8",
                 "doctrine/inflector": "~1.0",
                 "ext-mbstring": "*",
-                "illuminate/contracts": "5.0.*",
-                "php": ">=5.4.0"
+                "illuminate/contracts": "5.1.*",
+                "php": ">=5.5.9"
             },
             "suggest": {
                 "jeremeamia/superclosure": "Required to be able to serialize closures (~2.0).",
-                "symfony/var-dumper": "Required to use the dd function (2.6.*)."
+                "symfony/var-dumper": "Required to use the dd function (2.7.*)."
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.0-dev"
+                    "dev-master": "5.1-dev"
                 }
             },
             "autoload": {
@@ -261,7 +261,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "http://laravel.com",
-            "time": "2015-06-04 12:15:51"
+            "time": "2015-08-29 21:35:29"
         }
     ],
     "packages-dev": [
