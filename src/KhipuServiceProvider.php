@@ -12,7 +12,6 @@ class KhipuServiceProvider extends ServiceProvider
 	 *
 	 * @var bool
 	 */
-    protected $defer = false;
 
     /**
      * Bootstrap the application services.
@@ -38,7 +37,9 @@ class KhipuServiceProvider extends ServiceProvider
     private function bindKhipuClass()
     {
         $this->app->bind(Khipu::class, function ($app) {
-            return new Khipu(config('khipu.id'), config('khipu.key'));
+            $khipu = new Khipu();
+            $khipu->authenticate(config('khipu.id'), config('khipu.key'));
+            return $khipu;
         });
     }
 
